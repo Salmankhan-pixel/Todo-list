@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, "sans-serif";
+}
+body {
+  background-color: #000000;
+}
+.boc {
+  display: flex;
+  justify-content: center;
+  height: 86vh;
+  width: 33vw;
+  margin: auto;
+  margin-top: 42px;
+  background-color: #16182a;
+  border-radius: 8px;
+  border: 3px solid white;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.see {
+  overflow-y: auto;
+  height: 60vh;
+}
+
+.see::-webkit-scrollbar {
+  width: 8px;
+}
+
+.see::-webkit-scrollbar-track {
+  background: #2e2f2f;
+  border-radius: 10px;
+}
+
+.see::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.see::-webkit-scrollbar-thumb:hover {
+  background: #5c7267;
+}
+
+.see {
+  scrollbar-width: thin;
+  scrollbar-color: #2b00ff #000000;
+}
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 180px 170px 120px;
+  padding: 15px;
+  align-items: center;
+  column-gap: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  text-align: center;
+}
+.todo-item {
+  margin: 5px 0px;
+  padding: 13px 15px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+.btn {
+  background-color: rgb(255, 42, 0);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.btn1 {
+  background-color: rgb(56, 232, 88);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.show-case {
+  padding: 10px 15px;
+  border-radius: 18px;
+  border: none;
+  background-color: rgb(247, 247, 246);
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+.ds {
+  padding: 10px 15px;
+  border-radius: 18px;
+  border: none;
+  background-color: rgb(247, 247, 246);
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .boc {
+    width: 90vw;
+  }
+  .todo-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 80px;
+    padding: 15px;
+    align-items: center;
+    column-gap: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  .boc {
+    width: 94vw;
+  }
+  .todo-grid {
+    display: grid;
+    grid-template-columns: 220px 240px 190px;
+    padding: 15px;
+    align-items: center;
+    column-gap: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+  }
+  .see {
+    overflow-y: auto;
+    height: 60vh;
+  }
+
+  .see::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .see::-webkit-scrollbar-track {
+    background: #2e2f2f;
+    border-radius: 10px;
+  }
+
+  .see::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+
+  .see::-webkit-scrollbar-thumb:hover {
+    background: #5c7267;
+  }
+
+  .see {
+    scrollbar-width: thin;
+    scrollbar-color: #2b00ff #000000;
+  }
+}
